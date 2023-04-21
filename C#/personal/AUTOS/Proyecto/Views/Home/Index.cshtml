@@ -1,0 +1,157 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<head>
+
+    <style type="text/css">
+        h2 {
+            margin: 0;
+            color: #666;
+            padding-top: 90px;
+            font-size: 52px;
+            font-family: "trebuchet ms", sans-serif;
+        }
+
+        .item {
+            background: #333;
+            text-align: center;
+            height: 300px !important;
+        }
+
+        .carousel {
+            margin-top: 20px;
+        }
+
+        .bs-example {
+            margin: 20px;
+        }
+
+
+    .wrapper { width: 100%; /* whatever width you want */ display: inline-block; position: relative; background-size: contain; background: url('https://motorsv.com/wp-content/uploads/2019/10/car-repair.png') top center no-repeat; margin: 0 auto; }
+
+            .wrapper:after {
+                padding-top: 75%;
+                /* this llama image is 800x600 so set the padding top % to match 600/800 = .75 */
+                display: block;
+                content: '';
+            }
+
+
+    .wrapper2 { width: 100%; /* whatever width you want */ display: inline-block; position: relative; background-size: contain; background: url('http://www.edenautomotive.ca/wp-content/uploads/sites/132/2020/08/auto-repair-team.png') top center no-repeat; margin: 0 auto; }
+
+            .wrapper:after {
+                padding-top: 75%;
+                /* this llama image is 800x600 so set the padding top % to match 600/800 = .75 */
+                display: block;
+                content: '';
+            }
+
+
+    .wrapper3 { width: 100%; /* whatever width you want */ display: inline-block; position: relative; background-size: contain; background: url('https://silkrentacar.com/wp-content/uploads/2019/08/header-pk.png') top center no-repeat; margin: 0 auto; }
+
+        .wrapper:after {
+            padding-top: 75%;
+            /* this llama image is 800x600 so set the padding top % to match 600/800 = .75 */
+            display: block;
+            content: '';
+        }
+
+
+        .main {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            color: black;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!--this DIV use for carousel and sliding time-->
+    <div class="bs-example">
+        <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+            <!-- this DIV use for carousel indicators for slider-->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!--Wrapper for carousel items which are show in output form-->
+            <div class="carousel-inner">
+                <!--this is first slider page-->
+                <div class="active item wrapper">
+
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <!-- this is second slider page-->
+                <div class="item wrapper2">
+
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+                <!-- this is third slider page-->
+                <div class="item wrapper3">
+
+                    <div class="carousel-caption">
+
+                    </div>
+                </div>
+            </div>
+            <!-- this is carousel controls for used of next and previous pages slider-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+        <div class="row">
+            <div class="col-md-4">
+                <h2>¿Cómo puedo recibir una cotización?</h2>
+                <p>
+                    Favor, complete este formulario para poder enviarle su cotización. Presione este enlace para ir al Formulario..
+                </p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>¿En qué consiste este servicio?</h2>
+                <p>Le lavamos su vehículo personal o flotilla de vehículos a domicilio o en las instalaciones de su compañía. Nuestro personal cuenta con amplia experiencia.. </p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>¿En que horario ofrecen el servicio?</h2>
+                <p>El horario lo pone usted, previo a la contratación, negociaremos la fecha y hora que a usted mas le convenga. Siempre y cuando nuestra agenda lo permita..</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+
+
+
+
+</body>

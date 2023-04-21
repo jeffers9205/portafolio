@@ -1,0 +1,51 @@
+﻿@model Entidad.Vehiculo_Servicio
+
+@{
+    ViewBag.Title = "Eliminar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Eliminar Datos </h2>
+
+<h3>¿Estas seguro de eliminar el datos?</h3>
+<div>
+    <h4>Vehiculo_Servicio</h4>
+    <hr />
+    <h3><strong>@TempData["Message"]</strong></h3>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Vehiculo_Servicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Vehiculo_Servicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Servicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Servicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ID_Vehiculo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID_Vehiculo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>
