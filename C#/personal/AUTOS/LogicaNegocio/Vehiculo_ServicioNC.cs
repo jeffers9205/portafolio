@@ -13,7 +13,8 @@ namespace LogicaNegocio
 
 
         private static Vehiculo_ServicioDALC  obj = new Vehiculo_ServicioDALC();
-        public static List<Vehiculo_Servicio> ListarS(int id)
+
+        public static List<Carro_Servicio> ListarS(int id)
         {
 
             return obj.ListarS(id);
@@ -21,7 +22,7 @@ namespace LogicaNegocio
         }
 
 
-        public static void Agregar(Vehiculo_Servicio Vehis)
+        public static void Agregar(Carro_Servicio Vehis)
         {
             obj.Agregar(Vehis);
 
@@ -31,7 +32,7 @@ namespace LogicaNegocio
 
 
 
-        public static Vehiculo_Servicio GetVehiculo_Servicio(int id)
+        public static Carro_Servicio GetVehiculo_Servicio(int id)
         {
 
 

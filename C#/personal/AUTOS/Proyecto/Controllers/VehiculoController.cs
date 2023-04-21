@@ -31,7 +31,7 @@ namespace Proyecto.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Crear(Vehiculo vehi)
+        public ActionResult Crear(Carro vehi)
         {
             try
             {
@@ -75,7 +75,7 @@ namespace Proyecto.Controllers
         }
 
         [HttpPost]
-        public ActionResult Editar(Vehiculo vehi)
+        public ActionResult Editar(Carro vehi)
         {
             try
             {

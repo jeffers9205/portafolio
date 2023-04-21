@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entidad
+namespace AccesoDatos.baseDeDatos
 {
     using System;
     using System.Collections.Generic;
@@ -21,7 +21,7 @@ namespace Entidad
         }
     
         public int ID_Servicio { get; set; }
-        public string Descripción { get; set; }
+        public string Descripcion { get; set; }
         public int Monto { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

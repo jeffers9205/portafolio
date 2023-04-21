@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entidad
+namespace AccesoDatos.baseDeDatos
 {
     using System;
     using System.Collections.Generic;

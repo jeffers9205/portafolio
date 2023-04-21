@@ -30,12 +30,12 @@ namespace Proyecto.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Crear(Servicios Serv)
+        public ActionResult Crear(Servicio Serv)
         {
             try
             {
 
-                if (Serv.Monto == null || Serv.Descripción == null )
+                if (Serv.Monto == null || Serv.Descripcion == null )
                 {
 
                     ModelState.AddModelError("", "Error al agregar un servicio");
@@ -77,12 +77,12 @@ namespace Proyecto.Controllers
         }
 
         [HttpPost]
-        public ActionResult Editar(Servicios Serv)
+        public ActionResult Editar(Servicio Serv)
         {
             try
             {
 
-                if (Serv.Descripción == null || Serv.Monto == null)
+                if (Serv.Descripcion == null || Serv.Monto == null)
                 {
 
                     ModelState.AddModelError("", "Error al modificar un servicio");

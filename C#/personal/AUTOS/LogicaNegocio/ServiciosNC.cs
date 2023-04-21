@@ -11,7 +11,7 @@ namespace LogicaNegocio
     public class ServiciosNC
     {
         private static ServiciosDALC obj = new ServiciosDALC();
-        public static List<Servicios> ListarServicios()
+        public static List<Servicio> ListarServicios()
         {
 
             return obj.ListarServicios();
@@ -20,7 +20,7 @@ namespace LogicaNegocio
 
 
 
-        public static void Agregar(Servicios Serv)
+        public static void Agregar(Servicio Serv)
         {
             obj.Agregar(Serv);
 
@@ -29,7 +29,7 @@ namespace LogicaNegocio
 
 
 
-        public static Servicios GetServicios(int id)
+        public static Servicio GetServicios(int id)
         {
 
 
@@ -37,7 +37,7 @@ namespace LogicaNegocio
 
         }
 
-        public static void Editar(Servicios Serv)
+        public static void Editar(Servicio Serv)
         {
 
 

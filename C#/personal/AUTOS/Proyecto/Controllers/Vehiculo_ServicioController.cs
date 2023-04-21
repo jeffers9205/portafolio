@@ -11,7 +11,6 @@ namespace Proyecto.Controllers
 {
     public class Vehiculo_ServicioController : Controller
     {
-        // GET: Vehiculo_Servicio
         public ActionResult Index()
         {
             var Veh = ServiciosNC.ListarServicios();
@@ -34,18 +33,10 @@ namespace Proyecto.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Crear(Vehiculo_Servicio vehis)
+        public ActionResult Crear(Carro_Servicio vehis)
         {
             try
             {
-
-                //if (vehis. == null || vehi.Placa == null || vehi.Marca == null)
-                //{
-
-                //    ModelState.AddModelError("", "Ocurrio un error al agregar vehiculos");
-                //    return View(vehi);
-
-                //}
 
 
                 Vehiculo_ServicioNC.Agregar(vehis);

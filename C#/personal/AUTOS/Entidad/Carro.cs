@@ -12,13 +12,12 @@ namespace Entidad
     using System;
     using System.Collections.Generic;
     
-    public partial class Vehiculo_Servicio
+    public class Carro
     {
-        public int ID_Vehiculo_Servicio { get; set; }
-        public int ID_Servicio { get; set; }
         public int ID_Vehiculo { get; set; }
+        public string Placa { get; set; }
+        public string Dueño { get; set; }
+        public string Marca { get; set; }
     
-        public virtual Servicios Servicios { get; set; }
-        public virtual Vehiculo Vehiculo { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Entidad.Servicios>
+﻿@model IEnumerable<Entidad.Servicio>
 
 @{
     ViewBag.Title = "Index";
@@ -25,7 +25,7 @@
             @*@Html.DisplayNameFor(model => model.ID_Servicio)*@
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Descripción)
+            @Html.DisplayNameFor(model => model.Descripcion)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Monto)
@@ -39,7 +39,7 @@
             @Html.HiddenFor(modelItem => item.ID_Servicio)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Descripción)
+            @Html.DisplayFor(modelItem => item.Descripcion)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Monto)
